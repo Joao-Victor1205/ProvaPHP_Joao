@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 16-Abr-2024 às 19:25
+-- Tempo de geração: 16-Out-2024 às 21:21
 -- Versão do servidor: 10.4.22-MariaDB
 -- versão do PHP: 8.1.2
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `agenda_telefonica`
+-- Banco de dados: `agenda telefonica`
 --
 
 -- --------------------------------------------------------
@@ -27,7 +27,7 @@ SET time_zone = "+00:00";
 -- Estrutura da tabela `agenda_telefonica`
 --
 
-CREATE TABLE `agenda telefonica` (
+CREATE TABLE `agenda_telefonica` (
   `id` int(11) NOT NULL,
   `primeiro_nome` varchar(50) NOT NULL,
   `sobrenome` varchar(50) NOT NULL,
@@ -69,7 +69,6 @@ INSERT INTO `agenda_telefonica` (`id`, `primeiro_nome`, `sobrenome`, `email`, `t
 (27, 'Xuxa', 'Meneghel', 'xuxa.meneghel@example.com', '(39) 90000-002'),
 (28, 'Yasmin', 'Ferreira', 'yasmin.ferreira@example.com', '(41) 90000-002'),
 (29, 'Zaira', 'Baptista', 'zaira.baptista@example.com', '(42) 90000-002'),
-(30, 'Alberto', 'Carvalho', 'alberto.carvalho@example.com', '(43) 90000-003'),
 (31, 'Bianca', 'Duarte', 'bianca.duarte@example.com', '(44) 90000-003'),
 (32, 'Caio', 'Esteves', 'caio.esteves@example.com', '(45) 90000-003'),
 (33, 'Daniela', 'Fonseca', 'daniela.fonseca@example.com', '(46) 90000-003'),
@@ -89,7 +88,9 @@ INSERT INTO `agenda_telefonica` (`id`, `primeiro_nome`, `sobrenome`, `email`, `t
 (47, 'Renata', 'Teixeira', 'renata.teixeira@example.com', '(66) 90000-004'),
 (48, 'Sandro', 'Uchoa', 'sandro.uchoa@example.com', '(67) 90000-004'),
 (49, 'Tânia', 'Vasconcelos', 'tania.vasconcelos@example.com', '(68) 90000-004'),
-(50, 'Ubirajara', 'Xavier', 'ubirajara.xavier@example.com', '(69) 90000-005');
+(50, 'Ubirajara', 'Xavier', 'ubirajara.xavier@example.com', '(69) 90000-005'),
+(52, 'João Victor', 'dos Santo', 'morais@gmail.com', '(47)98867-2515'),
+(53, 'João Victor', 'dos Sant', 'morais@gmail.com', '(47)98867-2515');
 
 -- --------------------------------------------------------
 
@@ -134,7 +135,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de tabela `agenda_telefonica`
 --
 ALTER TABLE `agenda_telefonica`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
 
 --
 -- AUTO_INCREMENT de tabela `usuarios`
